@@ -114,7 +114,7 @@ export default function PromptInput({ onGenerate, isGenerating }) {
                             disabled={isGenerating}
                         >
                             {sizes.map((size) => (
-                                <option key={size.value} value={size.value} className="bg-gray-800 text-white">
+                                <option key={size.value} value={size.value} className="bg-gray-200 text-yellow-400">
                                     {size.label}
                                 </option>
                             ))}
@@ -127,7 +127,7 @@ export default function PromptInput({ onGenerate, isGenerating }) {
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                     disabled={!prompt.trim() || isGenerating}
-                    className="w-full py-4 px-8 bg-gradient-to-r from-purple-600 to-pink-600 
+                    className="w-full py-4 px-8 bg-gradient-to-r from-purple-600 to-yellow-600 
                                      text-white font-semibold rounded-xl shadow-lg 
                                      hover:from-purple-700 hover:to-pink-700 
                                      disabled:opacity-50 disabled:cursor-not-allowed

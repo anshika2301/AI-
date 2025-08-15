@@ -9,7 +9,7 @@ export default function ThemeToggle({ isDark, onToggle }) {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="fixed top-4 right-4 z-50 p-3 bg-white/10 backdrop-blur-sm 
-                             border border-white/20 rounded-full text-gray-700 dark:text-gray-300
+                             border border-white/20 rounded-full text-yellow-700 dark:text-gray-300
                              hover:bg-white/20 transition-all duration-200"
         >
             <motion.div

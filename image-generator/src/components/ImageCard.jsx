@@ -68,7 +68,7 @@ export default function ImageCard({ src, prompt, timestamp, onDownload }) {
                         onClick={onDownload}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="px-3 py-1 bg-pink-200 hover:bg-purple-400 text-yellow
+                        className="px-3 py-1 bg-yellow-200 hover:bg-purple-200 text-yellow
                                          text-xs rounded-full transition-all duration-200 flex items-center gap-1"
                     >
                         <Download size={12} />
