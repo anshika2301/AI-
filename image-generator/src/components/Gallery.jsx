@@ -40,15 +40,15 @@ export default function Gallery({ images }) {
                             repeat: Infinity,
                             repeatType: "reverse"
                         }}
-                        className="w-24 h-24 mx-auto mb-4 bg-gradient-to-br from-purple-400 to-pink-400 
+                        className="w-24 h-24 mx-auto mb-4 bg-gradient-to-br from-purple-400 to-teal-400 
                                          rounded-full flex items-center justify-center"
                     >
                         <span className="text-3xl">🎨</span>
                     </motion.div>
-                    <h3 className="text-xl font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                    <h3 className="text-xl font-semibold text-yellow-700 dark:text-yellow-300 mb-2">
                         No images yet
                     </h3>
-                    <p className="text-gray-500 dark:text-gray-400">
+                    <p className="dark:text-white dark:text-white">
                         Generate your first AI image by entering a prompt above!
                     </p>
                 </div>
@@ -63,10 +63,10 @@ export default function Gallery({ images }) {
             transition={{ duration: 0.6, delay: 0.2 }}
         >
             <div className="mb-6">
-                <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">
+                <h2 className="text-2xl font-bold text-gray-800 text-white mb-2">
                     Generated Images
                 </h2>
-                <p className="text-gray-600 dark:text-gray-400">
+                <p className="text-gray-600 text-white">
                     {images.length} image{images.length !== 1 ? 's' : ''} in your gallery
                 </p>
             </div>

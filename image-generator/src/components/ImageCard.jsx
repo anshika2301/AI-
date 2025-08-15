@@ -43,7 +43,7 @@ export default function ImageCard({ src, prompt, timestamp, onDownload }) {
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                     onClick={onDownload}
-                    className="absolute top-3 right-3 p-3 bg-purple-600 hover:bg-purple-700 
+                    className="absolute top-3 right-3 p-3 bg-blue-600 hover:bg-purple-700 
                                      text-white rounded-full shadow-lg transition-all duration-300
                                      border-2 border-white/20 backdrop-blur-sm z-10"
                 >
@@ -53,12 +53,12 @@ export default function ImageCard({ src, prompt, timestamp, onDownload }) {
             
             {/* Card content */}
             <div className="p-4 space-y-2">
-                <p className="text-sm text-gray-700 dark:text-gray-300 line-clamp-2 leading-relaxed">
+                <p className="text-sm text-yellow-700 dark:text-gray-300 line-clamp-2 leading-relaxed">
                     {prompt}
                 </p>
                 
                 <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2 text-xs text-gray-500 dark:text-gray-400">
+                    <div className="flex items-center gap-2 text-xs text-yellow-500 dark:text-yellow-400">
                         <Calendar size={12} />
                         <span>{formatDate(timestamp)}</span>
                     </div>
@@ -68,7 +68,7 @@ export default function ImageCard({ src, prompt, timestamp, onDownload }) {
                         onClick={onDownload}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="px-3 py-1 bg-purple-600 hover:bg-purple-700 text-white 
+                        className="px-3 py-1 bg-pink-200 hover:bg-purple-400 text-yellow
                                          text-xs rounded-full transition-all duration-200 flex items-center gap-1"
                     >
                         <Download size={12} />
