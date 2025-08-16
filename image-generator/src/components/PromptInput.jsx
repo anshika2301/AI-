@@ -101,7 +101,7 @@ export default function PromptInput({ onGenerate, isGenerating }) {
                     </div>
 
                     <div>
-                        <label className="block text-sm font-medium text-gray-500 text-gray-300 mb-2">
+                        <label className="block text-sm font-medium text-gray-500 mb-2">
                             Size
                         </label>
                         <select

@@ -62,8 +62,8 @@ export default function Gallery({ images }) {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
         >
-            <div className="mb-6">
-                <h2 className="text-2xl font-bold text-white text-red-300 mb-2">
+            <div className=" mb-6 text-center">
+                <h2 className="text-2xl font-bold text-white  mb-2">
                     Generated Images
                 </h2>
                 <p className="text-gray-100  ">
