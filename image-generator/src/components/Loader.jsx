@@ -39,11 +39,11 @@ export default function Loader() {
         transition={{ delay: 0.2 }}
         className="mt-4 text-center"
       >
-        <p className="text-lg font-medium text-gray-700 dark:text-gray-300">
+        <p className="text-lg font-medium text-gray-400 dark:text-gray-300">
           Creating your image...
         </p>
         <motion.p
-          className="text-sm text-gray-500 dark:text-gray-400 mt-1"
+          className="text-sm text-gray-400 dark:text-gray-400 mt-1"
           animate={{ opacity: [0.5, 1, 0.5] }}
           transition={{ duration: 2, repeat: Infinity }}
         >

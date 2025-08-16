@@ -48,7 +48,7 @@ export default function Gallery({ images }) {
                     <h3 className="text-xl font-semibold text-yellow-700 dark:text-yellow-300 mb-2">
                         No images yet
                     </h3>
-                    <p className="dark:text-white dark:text-white">
+                    <p className=" text-gray-500">
                         Generate your first AI image by entering a prompt above!
                     </p>
                 </div>
@@ -63,10 +63,10 @@ export default function Gallery({ images }) {
             transition={{ duration: 0.6, delay: 0.2 }}
         >
             <div className="mb-6">
-                <h2 className="text-2xl font-bold text-gray-800 text-white mb-2">
+                <h2 className="text-2xl font-bold text-white text-red-300 mb-2">
                     Generated Images
                 </h2>
-                <p className="text-gray-600 text-white">
+                <p className="text-gray-100  ">
                     {images.length} image{images.length !== 1 ? 's' : ''} in your gallery
                 </p>
             </div>

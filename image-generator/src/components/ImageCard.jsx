@@ -21,8 +21,8 @@ export default function ImageCard({ src, prompt, timestamp, onDownload }) {
             exit={{ opacity: 0, scale: 0.8 }}
             whileHover={{ y: -4 }}
             transition={{ duration: 0.3 }}
-            className="group relative bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden 
-                             border border-white/20 hover:border-white/30 transition-all duration-300"
+            className="group relative bg-green-50 backdrop-blur-sm rounded-xl overflow-hidden 
+                             border border-gray-200 hover:border-black transition-all duration-300"
         >
             <div className="aspect-square relative overflow-hidden">
                 <img
@@ -34,7 +34,7 @@ export default function ImageCard({ src, prompt, timestamp, onDownload }) {
                 />
                 
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10
                                             transition-all duration-300" />
                 
                 {/* Download button */}
@@ -45,7 +45,7 @@ export default function ImageCard({ src, prompt, timestamp, onDownload }) {
                     onClick={onDownload}
                     className="absolute top-3 right-3 p-3 bg-blue-600 hover:bg-purple-700 
                                      text-white rounded-full shadow-lg transition-all duration-300
-                                     border-2 border-white/20 backdrop-blur-sm z-10"
+                                     border-2 border-gray-900 backdrop-blur-sm z-10"
                 >
                     <Download size={18} />
                 </motion.button>
@@ -68,7 +68,7 @@ export default function ImageCard({ src, prompt, timestamp, onDownload }) {
                         onClick={onDownload}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="px-3 py-1 bg-yellow-200 hover:bg-purple-200 text-yellow
+                        className="px-3 py-1 border-black hover:bg-black text-yellow-400
                                          text-xs rounded-full transition-all duration-200 flex items-center gap-1"
                     >
                         <Download size={12} />

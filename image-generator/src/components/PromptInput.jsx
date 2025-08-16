@@ -59,8 +59,8 @@ export default function PromptInput({ onGenerate, isGenerating }) {
                         value={prompt}
                         onChange={(e) => setPrompt(e.target.value)}
                         placeholder="Describe your image..."
-                        className="w-full h-24 px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl 
-                                         text-gray-800 dark:text-white placeholder-gray-500 dark:placeholder-gray-400
+                        className="w-full h-24 px-4 py-3 bg-green-50 backdrop-blur-sm border border-gray-50 rounded-xl 
+                                         text-gray-800 dark:text-white placeholder-gray-400 dark:placeholder-gray-200
                                          focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent
                                          resize-none transition-all duration-200"
                         disabled={isGenerating}
@@ -80,20 +80,20 @@ export default function PromptInput({ onGenerate, isGenerating }) {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
-                        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                        <label className="block text-sm font-medium text-gray-500 ">
                             Style
                         </label>
                         <select
                             value={selectedStyle}
                             onChange={(e) => setSelectedStyle(e.target.value)}
-                            className="w-full px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 
+                            className="w-full px-4 py-3 bg-pink-50 backdrop-blur-sm border border-gray-300 
                                              rounded-xl text-gray-800 dark:text-white focus:outline-none 
                                              focus:ring-2 focus:ring-purple-500 focus:border-transparent
                                              transition-all duration-200"
                             disabled={isGenerating}
                         >
                             {styles.map((style) => (
-                                <option key={style.value} value={style.value} className="bg-gray-800 text-white">
+                                <option key={style.value} value={style.value} className="bg-gray-400 text-white">
                                     {style.label}
                                 </option>
                             ))}
@@ -101,20 +101,20 @@ export default function PromptInput({ onGenerate, isGenerating }) {
                     </div>
 
                     <div>
-                        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                        <label className="block text-sm font-medium text-gray-500 text-gray-300 mb-2">
                             Size
                         </label>
                         <select
                             value={selectedSize}
                             onChange={(e) => setSelectedSize(e.target.value)}
-                            className="w-full px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 
-                                             rounded-xl text-gray-800 dark:text-white focus:outline-none 
+                            className="w-full px-4 py-3 bg-pink-50 backdrop-blur-sm border border-gray-300 
+                                             rounded-xl text-gray-600 dark:text-white focus:outline-none 
                                              focus:ring-2 focus:ring-purple-500 focus:border-transparent
                                              transition-all duration-200"
                             disabled={isGenerating}
                         >
                             {sizes.map((size) => (
-                                <option key={size.value} value={size.value} className="bg-gray-200 text-yellow-400">
+                                <option key={size.value} value={size.value} className="bg-gray-400 text-white">
                                     {size.label}
                                 </option>
                             ))}

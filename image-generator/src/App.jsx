@@ -108,8 +108,8 @@ function App() {
   return (
     <div className={`min-h-screen transition-all duration-500 ${
       isDark 
-        ? 'bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900' 
-        : 'bg-gradient-to-br from-purple-100 via-pink-50 to-blue-100'
+        ? 'bg-gradient-to-br from-black via-purple-900 to-black' 
+        : 'bg-gradient-to-br from-blue-400 via-teal-100 to-blue-300'
     }`}>
       <ThemeToggle isDark={isDark} onToggle={toggleTheme} />
       
@@ -144,7 +144,7 @@ function App() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.6 }}
-            className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
+            className="text-lg text-white  max-w-2xl mx-auto"
           >
             Transform your imagination into stunning visuals using advanced AI technology.
             Powered by Stable Diffusion 2.
@@ -186,7 +186,7 @@ function App() {
           transition={{ delay: 0.8, duration: 0.6 }}
           className="mt-20 pt-8 border-t border-white/20 text-center"
         >
-          <div className="flex items-center justify-center gap-6 text-gray-600 dark:text-gray-400">
+          <div className="flex items-center justify-center gap-6 text-gray-400 dark:text-yellow-600">
             <a
               href="https://github.com"
               target="_blank"
@@ -198,18 +198,18 @@ function App() {
               <span>GitHub</span>
             </a>
             <a
-              href="https://netlify.com"
+              href="https://www.linkedin.com/in/anshika-verma-137165257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:text-purple-600 dark:hover:text-purple-400 
                        transition-colors duration-200"
             >
               <ExternalLink size={18} />
-              <span>Netlify</span>
+              <span>linkedin</span>
             </a>
           </div>
-          <p className="mt-4 text-sm text-gray-500 dark:text-gray-500">
-            Built with React, Tailwind CSS, and Framer Motion
+          <p className="mt-4 text-sm text-gray-500 dark:text-gray-200">
+            Built with React, Tailwind CSS, and Framer Motion-by Anshika Verma
           </p>
         </motion.footer>
       </div>
